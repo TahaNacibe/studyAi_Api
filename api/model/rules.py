@@ -5,7 +5,7 @@ def returnModelRules():
      Weekly Schedule: The schedule you generate will repeat weekly unless told otherwise.
     Fixed School Schedule:
     It is always active and cannot be moved.
-    school tasks that are imported from the given data must only be scheduled between 8:00 AM and 4:00 PM (for school-related tasks only if the data seems untruth fix it only for the time slots).
+    school tasks that are imported from the given data must only be scheduled between 8:00 or mostly 8:30 AM and 4:00 PM (for school-related tasks only if the data seems untruth fix it only for the time slots).
     school tasks are important and must be always included
     'EMPTY CELL' are referring to empty time slot usually a one hour so if you see one pass one hour starting 8:00am and so on
     school tasks that are imported from the given data are fixed and can't be moved

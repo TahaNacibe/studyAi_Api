@@ -31,9 +31,7 @@ class SchedulePDFUploadView(APIView):
         models_and_tasks_priorities = request.data.get('modelsAndTasksPriorities')
         
         extractor = PDFTableExtractor(pdf_data)
-        tables = extractor.extract_all_tables()
-        print(tables)
-        
+        tables = extractor.extract_all_tables()        
         finalRes = getResponseFromEndPoint(
             tableData = tables,
             userClass = user_class,
