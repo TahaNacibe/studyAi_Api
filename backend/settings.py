@@ -20,6 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 API_SECRET_KEY = os.getenv("API_SECRET_KEY")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+HOST_NAME= os.getenv("HOST_NAME")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -29,7 +30,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1"]
+ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1",HOST_NAME]
 
 
 # Application definition
