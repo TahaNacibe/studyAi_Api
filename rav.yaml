@@ -1,0 +1,8 @@
+scripts:
+ server:
+  - python manage.py runserver 3001
+ makemigrations:
+  - python manage.py makemigrations
+ migrate:
+  - python manage.py migrate
+ 
