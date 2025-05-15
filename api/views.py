@@ -6,7 +6,6 @@ from rest_framework import status
 from django.conf import settings
 
 from api.model.response_model import getResponseFromEndPoint
-from api.utils.pdf_reader import extract_text_from_pdf, parse_schedule
 from api.utils.formate_data_for_ai import PDFTableExtractor
 
 class SchedulePDFUploadView(APIView):

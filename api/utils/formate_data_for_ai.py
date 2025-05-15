@@ -5,7 +5,7 @@ import pandas as pd
 import camelot
 import tabula
 import pdfplumber
-from pdf2image import convert_from_bytes, convert_from_path
+from pdf2image import convert_from_bytes
 import pytesseract
 import numpy as np
 import cv2
@@ -45,8 +45,8 @@ class PDFTableExtractor:
         if self.tables_count == 0:
             self._extract_with_tabula()
         
-        # If still no tables, or additional tables might be in images, extract from images
-        self._extract_from_images()
+        # # If still no tables, or additional tables might be in images, extract from images
+        # self._extract_from_images()
         
         # Use pdfplumber as last resort for simple tables
         if self.tables_count == 0:
