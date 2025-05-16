@@ -78,6 +78,7 @@ TEMPLATES = [
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
+    'custom-header',
     'x-api-key',
 ]
 
