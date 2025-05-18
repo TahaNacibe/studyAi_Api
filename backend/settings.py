@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
-# from corsheaders.defaults import default_headers
+from corsheaders.defaults import default_headers
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -77,10 +77,10 @@ TEMPLATES = [
     },
 ]
 
-# CORS_ALLOW_HEADERS = list(default_headers) + [
-#     'custom-header',
-#     'x-api-key',
-# ]
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    'custom-header',
+    'x-api-key',
+]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
