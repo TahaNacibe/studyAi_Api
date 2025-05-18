@@ -1,6 +1,6 @@
 import requests
 from api.model.prompt import createSystemPrompt
-from api.utils.formate_json import extract_json_from_response
+from api.utils.formate_json import extract_json_array_from_response
 from backend.settings import GEMINI_API_KEY 
 
 
@@ -25,7 +25,7 @@ def getResponseFromEndPoint(tableData, userClass, userTasks, preferences, models
     #? apply actual request
     response = requests.post(url, json=payload, headers=headers)
     if response.status_code == 200:
-        formatted_json = extract_json_from_response(response.json())
+        formatted_json = extract_json_array_from_response(response.json())
         return formatted_json
     else:
         return f"Error: {response.status_code}"
