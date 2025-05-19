@@ -4,13 +4,20 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser
 from rest_framework import status
 from django.conf import settings
-
+from rest_framework.permissions import AllowAny
 from api.model.response_model import getResponseFromEndPoint
 from api.utils.formate_data_for_ai import PDFTableExtractor
 
 class SchedulePDFUploadView(APIView):
     parser_classes = [MultiPartParser]
+    permission_classes = [AllowAny]
 
+    def options(self, request, *args, **kwargs):
+        response = Response()
+        response["Access-Control-Allow-Origin"] = "*"  # You can restrict to specific origin
+        response["Access-Control-Allow-Headers"] = "Content-Type, x-api-key"
+        response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+        return response
     def post(self, request):
         # API key check
         api_key = request.headers.get("x-api-key")
