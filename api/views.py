@@ -14,9 +14,9 @@ class SchedulePDFUploadView(APIView):
 
     def options(self, request, *args, **kwargs):
         response = Response()
-        response["Access-Control-Allow-Origin"] = "*"  # You can restrict to specific origin
-        response["Access-Control-Allow-Headers"] = "Content-Type, x-api-key"
+        response["Access-Control-Allow-Origin"] = "https://www.studai.site"  # You can restrict to specific origin
         response["Access-Control-Allow-Methods"] = "POST, OPTIONS"
+        response["Access-Control-Allow-Headers"] = "Content-Type, x-api-key"
         return response
     def post(self, request):
         # API key check
