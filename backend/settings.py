@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1","studyaiapi-production.up.railway.app"]
+ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1","studyaiapi-production.up.railway.app","studai.site"]
 
 
 # Application definition
