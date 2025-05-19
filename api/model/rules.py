@@ -17,5 +17,6 @@ def returnModelRules():
     Avoid Overlap:
     Tasks should not conflict with school time or each other.
     if a school cell is empty you can use it for other tasks as long as it doesn't have another class after it unless the task is something that can be done anywhere.
-    you can use the days the schedule doesn't use too like friday
+    you can use the days the schedule doesn't use too like friday,
+    add Break sections in between long tasks or after school work is over 
 """

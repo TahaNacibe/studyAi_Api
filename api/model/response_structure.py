@@ -13,8 +13,8 @@ def getResponseStructure():
     - event_day: string (e.g., "Monday", "Tuesday", etc.)
     - priority: string ("1", to "5") 
     - color: string (optional, e.g., "#F87171" for red, or derive from priority if needed)
-    - user_id: keep it null
-    - module_id: Keep it null
+    - user_id: keep it null (return the world Null)
+    - module_id: Keep it Null (return the world Null)
 
     Return only a **JSON array**, not an object grouped by day.
 
