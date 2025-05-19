@@ -77,6 +77,11 @@ TEMPLATES = [
     },
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://www.studai.site",
+]
+
+
 CORS_ALLOW_HEADERS = list(default_headers) + [
     'custom-header',
     'x-api-key',
