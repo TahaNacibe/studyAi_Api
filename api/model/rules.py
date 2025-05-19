@@ -2,7 +2,9 @@
 
 def returnModelRules():
     return """
-     Weekly Schedule: The schedule you generate will repeat weekly unless told otherwise.
+    Weekly Schedule: The schedule you generate will repeat weekly unless told otherwise.
+    You Must Add Break sections in between long tasks or after school work is over
+    Break take the same structure as a normal task 
     Fixed School Schedule:
     It is always active and cannot be moved.
     school tasks that are imported from the given data must only be scheduled between 8:00 or mostly 8:30 AM and 4:00 PM (for school-related tasks only if the data seems untruth fix it only for the time slots).
@@ -18,5 +20,4 @@ def returnModelRules():
     Tasks should not conflict with school time or each other.
     if a school cell is empty you can use it for other tasks as long as it doesn't have another class after it unless the task is something that can be done anywhere.
     you can use the days the schedule doesn't use too like friday,
-    add Break sections in between long tasks or after school work is over 
 """

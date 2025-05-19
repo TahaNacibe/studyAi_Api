@@ -20,6 +20,7 @@ def getResponseStructure():
 
     ---
 
+    Breaks have also a item with event type break
     Example Response:
 
     ```json
