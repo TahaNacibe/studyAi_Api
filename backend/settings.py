@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1","studyaiapi-production.up.railway.app","studai.site"]
+ALLOWED_HOSTS = ["tahaNacibe.pythonanywhere.com","studyai-api-ogv9.onrender.com","127.0.0.1","studyaiapi-production.up.railway.app","https://www.studai.site"]
 
 
 # Application definition
@@ -132,6 +132,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
